@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>רומן | אימון מנטלי</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #020617;
+    color: #e5e7eb;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+section { padding: 90px 20px; }
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* TYPOGRAPHY */
+h1 { font-size: 42px; margin-top: 0; }
+h2 { font-size: 34px; }
+h3 { font-size: 22px; margin: 0; }
+
+p {
+    font-size: 18px;
+    color: #cbd5f5;
+}
+
+/* COLORS */
+.highlight {
+    color: #fde047;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 18px 44px;
+    background: linear-gradient(90deg,#fde047,#facc15);
+    color: #020617;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 10px 30px rgba(253,224,71,0.25);
+    transition: transform .15s ease;
+}
+
+.btn:hover { transform: translateY(-2px); }
+
+/* HERO */
+.hero {
+    background: radial-gradient(circle at top,#020617,#000);
+    text-align: center;
+}
+
+/* CARD */
+.card {
+    background: #020617;
+    padding: 40px;
+    border-radius: 26px;
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.06),
+        0 24px 50px rgba(0,0,0,0.7);
+}
+
+/* GRID */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.good {
+    border-right: 6px solid #fde047;
+}
+
+/* STEPS */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.step {
+    background: #020617;
+    padding: 26px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.06),
+        0 16px 32px rgba(0,0,0,0.6);
+}
+
+.step span {
+    display: block;
+    font-size: 34px;
+    font-weight: bold;
+    color: #fde047;
+    margin-bottom: 8px;
+}
+
+/* RESULTS */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.result-img {
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.06),
+        0 20px 40px rgba(0,0,0,0.7);
+}
+
+.result-img img {
+    width: 100%;
+    display: block;
+}
+
+/* CTA */
+.cta {
+    background: linear-gradient(135deg,#020617,#000);
+    text-align: center;
+    border-radius: 34px;
+    padding: 80px 20px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+}
+
+/* ANIMATION */
+.animate {
+    opacity: 0;
+    transform: translateY(35px);
+    animation: fadeUp 0.9s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .steps, .grid-3, .results-grid { grid-template-columns: 1fr; }
+    h1 { font-size: 34px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="card animate" style="max-width:850px;margin:auto;">
+            <h1>
+                תגידו, לא נמאס לכם לתת הכל  
+                <span class="highlight">ולהרגיש שכלום לא עובד?</span>
+            </h1>
+
+            <p style="margin-top:20px;">
+                במקום להמשיך לנחש לבד - תנו לי יד ונקפוץ קדימה.<br>
+                אימון מנטלי ממוקד, ברור ויישומי.
+            </p>
+
+            <p class="highlight" style="margin-top:15px;">
+                בעל תואר ראשון בפסיכולוגיה
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- WHO IT IS FOR -->
+<section>
+    <div class="container">
+        <h2 class="animate">האימון מתאים למי ש־</h2>
+
+        <div class="grid-3">
+            <div class="card good animate delay-1">
+                <h3>רוצה להבין באמת<br>מה עוצר אותו</h3>
+            </div>
+            <div class="card good animate delay-2">
+                <h3>מחפש דרך מסודרת<br>ולא ניחושים</h3>
+            </div>
+            <div class="card good animate delay-3">
+                <h3>רוצה תוצאות<br>שמחזיקות לאורך זמן</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STEPS -->
+<section>
+    <div class="container">
+        <h2 class="animate">איך התהליך עובד</h2>
+
+        <div class="steps">
+            <div class="step animate delay-1">
+                <span>1</span>
+                <h3>אבחון מנטלי</h3>
+            </div>
+            <div class="step animate delay-2">
+                <span>2</span>
+                <h3>בניית תכנית</h3>
+            </div>
+            <div class="step animate delay-3">
+                <span>3</span>
+                <h3>תרגול וליווי</h3>
+            </div>
+            <div class="step animate delay-3">
+                <span>4</span>
+                <h3>יציבות וביטחון</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- RESULTS -->
+<section>
+    <div class="container">
+        <h2 class="animate">תוצאות של לקוחות</h2>
+
+        <div class="results-grid">
+            <div class="result-img animate delay-1">
+                <img src="1.png" alt="תוצאה 1">
+            </div>
+            <div class="result-img animate delay-2">
+                <img src="2.png" alt="תוצאה 2">
+            </div>
+            <div class="result-img animate delay-3">
+                <img src="3.png" alt="תוצאה 3">
+            </div>
+            <div class="result-img animate delay-3">
+                <img src="4.png" alt="תוצאה 4">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+    <div class="container cta animate">
+        <h2>רוצה להתקדם כבר עכשיו?</h2>
+        <p><h3>שלח לי הודעת וואטסאפ<h3></p>
+
+        <a class="btn"
+           href="https://wa.me/972500000000?text=%D7%94%D7%99%D7%99%20%D7%A8%D7%95%D7%9E%D7%9F%2C%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%94%D7%AA%D7%A7%D7%93%D7%9D%20%D7%91%D7%90%D7%99%D7%9E%D7%95%D7%9F%20%D7%9E%D7%A0%D7%98%D7%9C%D7%99."
+           target="_blank">
+           שלח הודעה ב-WhatsApp
+        </a>
+    </div>
+</section>
+
+</body>
+</html>
